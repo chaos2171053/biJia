@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- Product id (pid) - will be HIDDEN - used to pass to other activity -->
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <!-- Name Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称:"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:paddingLeft="6dip"
+        android:textSize="20sp"
+        android:id="@+id/textView7" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:maxEms="15"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/textView7" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/goumaididian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dip"
+            android:paddingLeft="6dip"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/shangpinleibie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dip"
+            android:paddingLeft="6dip"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dip"
+            android:paddingLeft="6dip"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

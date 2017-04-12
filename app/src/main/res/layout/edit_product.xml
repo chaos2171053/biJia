@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/light_gray"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bar_bg"
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textView" />
+    <bijia.com.bijia.EditTextWithDel
+        android:layout_width="wrap_content"
+        android:id="@+id/inputshangpinname"
+        android:hint="25位字符以内"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="45dp"
+        android:background="@drawable/add_infomation"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品总价(新台币 元):"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/inputshangpinname"
+        android:layout_alignParentLeft="true"
+        />
+    <bijia.com.bijia.EditTextWithDel
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/inputshangpinprice"
+        android:hint=""
+        android:maxLines="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/add_infomation"
+        android:layout_below="@+id/textView2"
+        android:inputType="numberDecimal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品类别:"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/product_number"
+        android:layout_alignRight="@+id/textView" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerleibie"
+        android:background="@drawable/add_infomation"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购买地点:"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinnerleibie"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerdidian"
+        android:background="@drawable/add_infomation"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品数量"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/inputshangpinprice"
+        android:layout_alignParentLeft="true" />
+    <bijia.com.bijia.EditTextWithDel
+        android:layout_width="wrap_content"
+        android:id="@+id/product_number"
+        android:hint=""
+        android:maxLines="1"
+
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="45dp"
+        android:background="@drawable/add_infomation"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备注:"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/spinnerdidian"
+        android:layout_alignParentLeft="true" />
+    <bijia.com.bijia.EditTextWithDel
+        android:layout_width="wrap_content"
+        android:id="@+id/inputDesc"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:hint="选填"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="45dp"
+        android:background="@drawable/add_infomation"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存修改"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/add_btn"
+            android:textSize="17sp"
+            android:id="@+id/btnSave"
+            android:layout_below="@+id/inputDesc"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignLeft="@+id/inputDesc"
+            android:layout_alignRight="@+id/textView2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:background="@drawable/delete_btn"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/btnDelete"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@+id/btnSave"
+            android:layout_toRightOf="@+id/btnSave"
+            android:layout_alignRight="@+id/inputDesc" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

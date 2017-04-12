@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bar_bg"
+        android:gravity="center"
+        android:id="@+id/title_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史资料"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/textView9" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_sta"
+        android:text="日-分类圆饼图"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/choise_time_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周-分类圆饼图"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:id="@+id/week_sta"
+        android:layout_below="@+id/day_sta"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/month_sta"
+        android:text="月-分类圆饼图"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/week_sta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择查询日期"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="36dp"
+        android:id="@+id/choise_time_button"
+        android:layout_below="@+id/display_time_Textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年-消费走势图"
+        android:background="@drawable/shape"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/year_linechart"
+        android:layout_below="@+id/month_sta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你选择的日期是:"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="22sp"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/add_infomation"
+        android:id="@+id/display_time_Textview"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView8" />
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">比价</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_name">用户名</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">欢迎</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">用户名</string>
+</resources>

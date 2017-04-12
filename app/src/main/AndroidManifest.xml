@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bijia.com.bijia" >
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:name="bijia.com.bijia.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="SplashActivity"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity android:name=".activity.RegisterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity">
+
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Advices_To_Us"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NewProductActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AllProductsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".EditProductActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Day_Week_Month_Year_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Day_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Week_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Month_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Year_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Taibei_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Xinbei_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Taoyuan_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Taizhong_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Tainan_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Gaoxiong_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Appliances_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Daily_Necessities_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Cloth_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Food_Sta"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".History_Chart"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Day_PieChart"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Food_Chart_Day"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Cloth_Chart_Day"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Applicances_Chart_Day"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Daily_Necessities_Chart_Day"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Week_PieChart"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Food_Chart_Week"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Cloth_Chart_Week"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Applicances_Chart_Week"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Daily_Necessities_Chart_Week"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Month_PieChart"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Food_Chart_Month"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Cloth_Chart_Month"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Applicances_Chart_Month"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Daily_Necessities_Chart_Month"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Year_LineChart"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Future_Analysis"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Guess_Like"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Compare_Product_Price"
+            android:screenOrientation="portrait"></activity>
+
+
+    </application>
+
+</manifest>
